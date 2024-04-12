@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Handlee"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Handlee", cursive;
+        font-size: 16px;
+        background-color: #efefef;
+        padding: 10px;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 2em;
+        color: #20bcd5;
+        text-align: center;
+        padding: 18px 0 18px 0;
+        margin: 0 0 10px 0;
+      }
+
+      h1 span {
+        border: 4px dashed #20bcd5;
+        padding: 10px;
+      }
+
+      .section {
+        background-color: #fff;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+
+      form {
+        text-align: center;
+        margin-top: 0;
+      }
+
+      .submit {
+        background-color: #3fb6b2;
+        text-align: center;
+        padding: 12px 45px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+        border: none;
+        outline: none;
+        margin: 0 auto;
+        font-weight: bold;
+        width: 10%;
+      }
+
+      .submit:hover {
+        background-color: #43a09d;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      input,
+      textarea {
+        margin-bottom: 10px;
+        font-size: 11pt;
+        padding: 15px 10px 10px;
+        border: 1px solid #cecece;
+        background-color: #efefef;
+        color: #787575;
+        border-radius: 5px;
+        width: 100%;
+        outline: none;
+      }
+   
+
+      @media screen {
+        /* Applica stili diversi per schermi con larghezza minima di 600px */
+        input,
+        textarea{
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <h1><span>Contact Me</span></h1>
+      <form>
+        <input name="name" type="text" /><br />
+        <input name="email" type="email" /><br />
+        <textarea name="message"></textarea><br />
+        <input type="submit" value="SEND" class="submit" />
+      </form>
+    </div>
+  </body>
+</html>
